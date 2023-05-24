@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="singup.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="content">
+    <a href="/frontend/index.html" class="back-button">HOME</a>
+ </div>
+<form action="/valid" method="post">
+  <div class="container">
+    <h1>Registro</h1>
+    <p> Crea La Cuenta</p>
+    <hr>
+
+    <label for="email"><span>E-mail</span></label>
+    <input type="text" placeholder="Ingresa E-mail" name="email" required>
+
+    <label for="psw"><span>Password</span></label>
+    <input type="password" placeholder="Ingresa Password" name="psw" required>
+
+    <label for="psw-repeat"><span>Repite Password</span></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label class="remember">
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Recuerdame
+    </label>
+    
+    <p>Acepta los terminos y condiciones<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+</body>
+</html>

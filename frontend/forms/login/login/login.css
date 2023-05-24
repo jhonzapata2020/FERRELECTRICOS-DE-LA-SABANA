@@ -1,0 +1,66 @@
+
+body {
+    background-image: url('https://images.pexels.com/photos/268966/pexels-photo-268966.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: repeat; /* Puedes ajustar esto según tus necesidades */
+  }
+.container {
+    max-width: 400px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-image: url(https://images.pexels.com/photos/1090972/pexels-photo-1090972.jpeg?auto=compress&cs=tinysrgb&w=600);
+    box-shadow: 0 0 10px hsla(0, 12%, 94%, 0.959);
+    border: 1px solid #c5bcbc;
+    border-radius: 8%;
+  }
+  
+  .login-form {
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  
+  .login-form h1 {
+    text-align: center;
+    color: #dbcaca;
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  
+  .login-form input[type="password"],
+  .login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .back-button {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(57, 57, 155);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none;
+  }
+  .content {
+    display: flex;
+    justify-content:left;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&w=600); /* Reemplaza "path/to/texture.jpg" con la ruta de la textura descargada */
+    background-repeat: repeat;
+    
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto 0;
+    padding: 16px;
+    background-image: url(https://images.pexels.com/photos/1090972/pexels-photo-1090972.jpeg?auto=compress&cs=tinysrgb&w=600);
+    box-shadow: 0 0 10px rgba(183, 183, 199, 0);
+    border: 1px solid #ebe2e2;
+    border-radius: 8%;
+  }
+  
+  .container h1 {
+    text-align:  center;
+    color: #e8edf3;
+  }
+  
+  .container p {
+    text-align: center;
+    color: #B4CDE6;
+  }
+  .container span {
+    color: #B4CDE6;
+  }
+  .remember {
+    color: lightgrey;
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"] {
+    width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box; /* Añade esta propiedad */
+  margin-left: -5px; /* Ajusta el margen izquierdo negativo */
+  }
+  
+  .container input[type="text"]:focus,
+  .container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .container hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .container button:hover {
+    opacity: 1;
+  }
+  
+  .container .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  .container .cancelbtn,
+  .container .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  .container .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 300px) {
+    .container .cancelbtn,
+    .container .signupbtn {
+      width: 100%;
+    }
+  }
+  
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box; /* Añade esta propiedad */
+  margin-left: -5px; /* Ajusta el margen izquierdo negativo */
+}
+
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.back-button {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(57, 57, 155);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none;
+  }
+  .content {
+    display: flex;
+    justify-content:left;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+  }

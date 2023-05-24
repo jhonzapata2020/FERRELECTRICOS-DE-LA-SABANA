@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="informe.css">
+</head>
+<body>
+  <nav class="nav-wrapper  indigo darken-4">
+    <div class="container">
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Bodega</a>
+        </li>
+        <li><a href="/frontend/reportes/InformeInventarios.html">Informes</a></li>
+        <li><a href="/frontend/forms/login/login/signup.html">Registro</a></li>
+        <li><a href="/frontend/forms/login/login/login.html">iniciar Sesion</a></li>
+        <li><a href="/frontend/cuentas/johnZapata.html">Mi cuenta</a></li>
+      </ul>
+      <a href="#" data-target="responsive-menu" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <a href="#" class="brand-logo right">
+        <img src="/frontend/img/logo.png" height="100" class="circle logo z-depth-5" alt="LOGO Ferrelectricos">
+      </a>
+    </div>
+</nav>
+  <div class="content">
+    <a href="/frontend/index.html" class="back-button">HOME</a>
+ </div>
+    <div class="container section"></div>
+    <h4 class="header center deep-orange-text tex- darken-4">INFORMES</h4>
+
+        <div class="divider"></div>
+        <div class="container section">
+            <div class="row">
+                <div class="col s1">
+                    <i class="medium material-icons">assignment</i>
+                    </div>
+                    <div class="col s11">
+                        <h5>A continuación seleccione la fecha del informe y la Bodega</h5>
+                    </div>
+
+                    <div class="col s12">
+                        <div class="row">
+                          <div class="input-field col s12">
+                          <span class="flow-text"></span>
+                          <label>Elige la fecha </label>
+                            <input type="text" class="datepicker">
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- Dropdown Trigger -->
+                      <div class="col s12">
+                        <div class="row">
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Bodega</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Eléctricos</a></li>
+    <li><a href="#!">Construcción</a></li>
+    <li><a href="#!">Herramientas</a></li>
+  </ul>
+                <br></br>
+                <div class="col s12">
+                 <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Generar informe
+                    <i class="material-icons right">send</i>
+                </button>
+            <BR></BR>
+                <div class="col s12">
+                    <h5>VISTA PREVIA</h5>
+
+                    <table>
+                        <thead>
+                          <tr>
+                              <th>NOMBRE ARTÍCULO</th>
+                              <th>CANTIDAD</th>
+                              <th>VR TOTAL</th>
+                          </tr>
+                        </thead>
+                
+                        <tbody>
+                          <tr>
+                            <td>Cemento 50 kg</td>
+                            <td>17 UND</td>
+                            <td>$853.400 </td>
+                          </tr>
+                          <tr>
+                            <td>Estuco</td>
+                            <td>26 UND</td>
+                            <td>$585.000</td>
+                          </tr>
+                          <tr>
+                            <td>Pegacor 25 kg</td>
+                            <td>2 UND</td>
+                            <td>$34.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                </div>          
+             
+            </div>
+            </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <SCRIpt>
+        $(document).ready(function(){
+          $('.datepicker').datepicker({
+            autoClose:true	
+          });
+        });
+     </SCRIpt>
+     <script>
+          $('.dropdown-trigger').dropdown({
+            constrainWidth:false
+         });
+
+     </script>
+</body>
+</html>
+

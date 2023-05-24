@@ -1,0 +1,38 @@
+
+.back-button {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(57, 57, 155);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+  .content {
+    display: flex;
+    justify-content:left;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .flex-item {
+    flex-grow: 1;
+  }
+  
+  .back-button {
+    text-align: left;
+  }
+  
+  .header.center {
+    text-align: left;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    color: #E55807;
+   }
+  
+  
