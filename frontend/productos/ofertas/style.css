@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=600);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  justify-content: flex-start;
+  color: #fff;
+  display: flex;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box img {
+  max-width: 70%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+  height: auto;
+  margin-right: 10px; 
+}
+
+.box h4 {
+ color: lightslategray;
+  margin: 0; /* Elimina el margen para evitar problemas de superposición */
+  text-align: left; 
+  text-align: center;  /* Centra el texto horizontalmente */
+}

@@ -7,6 +7,11 @@ body.custom-background {
     margin-top: 0;
     overflow: visible;
   } 
+  .gradient-nav {
+    background: linear-gradient(to right, #5168c3, #242e98, #0002A1); /* ejemplo de gradiente */
+    height: 60px; 
+  }
+  
   .container h1 {
     display: flex;
     align-items: center;
@@ -210,13 +215,13 @@ body.custom-background {
 
 /* Estilos del logo */
 .brand-logo img {
-  max-height: 100px;
+  height: 90px;
 }
 @media (max-width: 600px) {
   .brand-logo {
     display: flex;
     justify-content: center;
-    max-height: 90px;
+    max-height: 80px;
   }
 }
 
