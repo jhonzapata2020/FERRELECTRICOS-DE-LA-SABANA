@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrelectricos</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body class="custom-background">
+  <nav class="nav-wrapper  indigo darken-4 gradient-nav">
+    <div class="container">
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Bodega</a>
+        </li>
+        <li><a href="/public/reportes/InformeInventarios.html">Informes</a></li>
+        <li><a href="/public/forms/login/login/singup.css">Registro</a></li>
+        <li><a href="/public/forms/login/login/login.html">iniciar Sesion</a></li>
+        <li><a href="/public/cuentas/johnZapata.html">Mi cuenta</a></li>
+      </ul>
+      <a href="#" data-target="responsive-menu" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <a href="#" class="brand-logo right">
+        <img src="/public/img/logo.png" height="100" class="circle logo z-depth-5" alt="LOGO Ferrelectricos">
+      </a>  
+    </div>
+  </nav>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="/public/productos/electricos.html">Electricos</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="/public/productos/construccion.html">Construccion</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="/public/productos/herramientas.html">Herramientas</a></li>
+    <li><a href="/public/productos/ofertas/ofertaGeneral.html">Oferta General</a></li>
+  </ul>
+  <ul id="responsive-menu" class="sidenav">
+    <li><a href="#">Inventarios</a></li>
+    <li><a href="#">Informes</a></li>
+    <li><a href="#">Iniciar Sesion</a></li>
+  </ul>
+  
+  <div class="counter">
+    <div class="nums">
+      <span class="in">3</span>
+      <span>2</span>
+      <span>1</span>
+      <span>0</span>
+    </div>
+    <h4>Get Ready</h4>
+  </div>
+
+  <div class="final">
+    <h1 class="go">GO</h1>
+    <button id="replay">
+      <span>Replay</span>
+    </button>
+  </div>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, {
+      constrainWidth:false
+    } 
+    );
+  });
+ </script>
+<script src="/public/js/script.js"></script>
+</body-->
+</html>

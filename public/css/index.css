@@ -1,0 +1,264 @@
+body.custom-background {
+    background-image: url(https://images.pexels.com/photos/268966/pexels-photo-268966.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* Añade otros estilos personalizados para el body si es necesario */
+   
+  }
+  .nav-wrapper {
+    margin-top: 0;
+    overflow: visible;
+  } 
+  .gradient-nav {
+    background: linear-gradient(to right, #5168c3, #242e98, #0002A1); /* ejemplo de gradiente */
+    height: 60px; 
+  }
+  
+  .container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(167, 92%, 52%);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  h1:hover span:nth-child(1) {
+    margin-right: 5px;
+ }
+ h1:hover span:nth-child(1)::backdrop {
+    content: "A"
+ }
+ h1:hover span:nth-child(2) {
+    margin-left: 30px;
+ }
+ h1:hover span:nth-child(3) {
+    margin-left: 30px;
+ }
+ h1:hover span {
+    color: hsl(49, 0, 48%);
+    text-shadow: 0 0 10px hsl(64, 60%, 49%), 0 0 20px hsl(49, 60%, 70%),
+    0 0 40px hsl(54, 70%, 48%);
+ }
+ h1 span {
+    transition: 0.5s ease-out;
+ }@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   height: 100vh;
+   overflow: hidden;
+ }
+ 
+ h4 {
+   font-size: 20px;
+   margin: 5px;
+   text-transform: uppercase;
+ }
+ 
+ .counter {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ .counter.hide {
+   transform: translate(-50%, -50%) scale(0);
+   animation: hide 0.2s ease-out;
+ }
+ 
+ @keyframes hide {
+   0% {
+     transform: translate(-50%, -50%) scale(1);
+   }
+ 
+   100% {
+     transform: translate(-50%, -50%) scale(0);
+   }
+ }
+ 
+ .final {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   text-align: center;
+ }
+ 
+ .final.show {
+   transform: translate(-50%, -50%) scale(1);
+   animation: show 0.2s ease-out;
+ }
+ 
+ @keyframes show {
+   0% {
+     transform: translate(-50%, -50%) scale(0);
+   }
+ 
+   30% {
+     transform: translate(-50%, -50%) scale(1.4);
+   }
+ 
+   100% {
+     transform: translate(-50%, -50%) scale(1);
+   }
+ }
+ 
+ .nums {
+   color: #3498db;
+   font-size: 50px;
+   position: relative;
+   overflow: hidden;
+   width: 250px;
+   height: 50px;
+ }
+ 
+ .nums span {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(120deg);
+   transform-origin: bottom center;
+ }
+ 
+ .nums span.in {
+   transform: translate(-50%, -50%) rotate(0deg);
+   animation: goIn 0.5s ease-in-out;
+ }
+ 
+ .nums span.out {
+   animation: goOut 0.5s ease-in-out;
+ }
+ 
+ @keyframes goIn {
+   0% {
+     transform: translate(-50%, -50%) rotate(120deg);
+   }
+ 
+   30% {
+     transform: translate(-50%, -50%) rotate(-20deg);
+   }
+ 
+   60% {
+     transform: translate(-50%, -50%) rotate(10deg);
+   }
+ 
+   100% {
+     transform: translate(-50%, -50%) rotate(0deg);
+   }
+ }
+ 
+ @keyframes goOut {
+   0% {
+     transform: translate(-50%, -50%) rotate(0deg);
+   }
+ 
+   60% {
+     transform: translate(-50%, -50%) rotate(20deg);
+   }
+ 
+   100% {
+     transform: translate(-50%, -50%) rotate(-120deg);
+   }
+ }
+ 
+ #replay{
+   background-color: #3498db;
+   border-radius: 3px;
+   border: none;
+   color: aliceblue;
+   padding: 5px;
+   text-align: center;
+   display: inline-block;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+ 
+ #replay span{
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.3s;
+ }
+ 
+ #replay span:after{
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ 
+ #replay:hover span{
+   padding-right: 25px;
+ }
+ 
+ #replay:hover span:after{
+   opacity: 1;
+   right: 0;
+ }
+ 
+ /* Estilos generales del navbar */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del logo */
+.brand-logo img {
+  height: 90px;
+}
+@media (max-width: 600px) {
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 378px) {
+  .final h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .brand-logo img {
+    max-height: 90px;
+  }
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  /* Ajuste de tamaño del logo en pantallas pequeñas */
+  .brand-logo img {
+    max-height: 70px;
+  }
+
+  /* Estilos del botón de menú en pantallas pequeñas */
+  .sidenav-trigger {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidenav-trigger i {
+    font-size: 30px;
+  }
+
+  /* Estilos del menú desplegable en pantallas pequeñas */
+  .dropdown-content li {
+    display: block;
+  }
+
+  /* Estilos del enlace en el menú desplegable en pantallas pequeñas */
+  .dropdown-content li a {
+    padding: 10px 20px;
+  }
+}
+
